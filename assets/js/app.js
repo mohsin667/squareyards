@@ -34,8 +34,8 @@ $(document).ready(function () {
     $(".scroller").slick({
       draggable: false,
       slidesToShow: 4,
-      prevArrow: '<button class="slide-arrow prev-arrow"><img src="../assets/img/next.png" /></button>',
-      nextArrow: '<button class="slide-arrow next-arrow"><img src="../assets/img/next.png" /></button>',
+      prevArrow: '<button class="slide-arrow prev-arrow"><img src="./assets/img/next.png" /></button>',
+      nextArrow: '<button class="slide-arrow next-arrow"><img src="./assets/img/next.png" /></button>',
       responsive: [
         {
           breakpoint: 992,
@@ -55,8 +55,8 @@ $(document).ready(function () {
     });
     $(".inner-item").slick({
       dots: true,
-      prevArrow: '<button class="slide-arrow prev-arrow"><img src="../assets/img/inner-right.png" /></button>',
-      nextArrow: '<button class="slide-arrow next-arrow"><img src="../assets/img/inner-right.png" /></button>'
+      prevArrow: '<button class="slide-arrow prev-arrow"><img src="./assets/img/inner-right.png" /></button>',
+      nextArrow: '<button class="slide-arrow next-arrow"><img src="./assets/img/inner-right.png" /></button>'
     });
   }
   sliders();
