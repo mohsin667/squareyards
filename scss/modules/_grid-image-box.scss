@@ -1,0 +1,146 @@
+.h-overview {
+  padding-bottom: 6rem;
+  @include media($medium) {
+    padding-bottom: 10rem;
+  }
+  display: flex;
+  flex-flow: wrap;
+  .grid-image-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    order: 2;
+    @include media($medium) {
+      order: 0;
+      padding-right: 2rem;
+      width: 60rem;
+    }
+    @include media($large) {
+      width: 76rem;
+    }
+    .grid-col {
+      display: flex;
+      justify-content: space-between;
+      flex-flow: wrap;
+      &:first-child {
+        width: calc(40% - 0.45rem);
+        @include media($medium) {
+          width: calc(50% - 0.75rem);
+        }
+      }
+      &:last-child {
+        width: calc(60% - 0.45rem);
+        @include media($medium) {
+          width: calc(50% - 0.75rem);
+        }
+      }
+
+      @include media($medium) {
+        width: calc(50% - 0.75rem);
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 0.8rem;
+      }
+      .image-col-half {
+        cursor: pointer;
+        position: relative;
+        width: calc(50% - 0.45rem);
+        padding-bottom: 0.45rem;
+        overflow: hidden;
+
+        @include media($medium) {
+          padding-bottom: 0.75rem;
+          width: calc(50% - 0.75rem);
+        }
+        &:nth-child(3),
+        &:nth-child(4) {
+          padding-bottom: 0;
+          padding-top: 0.45rem;
+          @include media($medium) {
+            padding-top: 0.75rem;
+          }
+        }
+      }
+    }
+  }
+  .h-list {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    @include media($medium) {
+      width: calc(100% - 60rem);
+    }
+    @include media($large) {
+      width: calc(100% - 76rem);
+    }
+    h3 {
+      color: $green;
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    h1 {
+      font-size: 3rem;
+      color: #000;
+      margin-bottom: 0rem;
+    }
+    hr {
+      border: 1px solid #e0e0e0;
+      margin-top: 0.2rem;
+      height: 0.5px;
+    }
+    li {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+    }
+    span {
+      font-size: 1.2rem;
+      margin-right: 1rem;
+    }
+  }
+}
+
+.photo-band {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem 0.7rem;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  bottom: 0;
+  width: 100%;
+  border-radius: 0 0 0.8rem 0.8rem;
+  @include media($medium) {
+    border-radius: 0.3rem;
+    bottom: 1rem;
+    left: 1rem;
+    width: calc(100% - 2rem);
+    font-size: 1.4rem;
+  }
+}
+
+.mapPin {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  font-size: 1.8rem;
+  @include media($medium) {
+    font-size: 3.2rem;
+  }
+  p {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #000;
+    @include media($medium) {
+      font-size: 1.8rem;
+    }
+  }
+}

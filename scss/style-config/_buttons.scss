@@ -1,0 +1,42 @@
+// =============================================================================
+//  BUTONS
+// =============================================================================
+
+.sq-btn {
+  @include trans;
+  padding: 0.7rem 1.8rem;
+  border: 1px solid #eaeaea;
+  border-radius: 1.8rem;
+  color: #333333;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  margin-right: 12px;
+  background-color: #fff;
+  &:hover {
+    color: #fff;
+    border-color: $green;
+    background: $green;
+  }
+  &.active {
+    color: #fff;
+    border-color: $green;
+    background: $green;
+  }
+  &.square {
+    border-radius: 0.3rem;
+    color: #fff;
+  }
+  &.green-square {
+    background-color: transparent;
+    border-color: $green;
+  }
+  &.grey-square {
+    border-color: transparent;
+    background-color: #444;
+  }
+  &.green {
+    color: #fff;
+    border-color: $green;
+    background: $green;
+  }
+}

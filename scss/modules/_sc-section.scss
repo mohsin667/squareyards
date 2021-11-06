@@ -1,0 +1,92 @@
+.sc-section {
+  @include margin;
+  .tab {
+    padding-left: 0;
+    margin-bottom: 2rem;
+  }
+  .sc-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    .sc-card {
+      width: 100%;
+      @include border;
+      @include radius;
+      margin-bottom: 1.5rem;
+      @include media($tab) {
+        width: calc(100% / 2 - 1.5rem);
+      }
+      @include media($medium) {
+        margin-bottom: 0;
+        width: calc(100% / 4 - 1.5rem);
+      }
+
+      .sc-card-heading {
+        padding: 1.5rem 2rem;
+        h4 {
+          font-size: 2rem;
+          font-weight: 600;
+          margin-bottom: 0.5rem;
+        }
+        p {
+          font-size: 1.2rem;
+          color: #666;
+        }
+      }
+      .sc-card-body {
+        padding: 1.5rem 2rem;
+        background: #f8f8f8;
+        p {
+          line-height: 24px;
+          font-size: 1.6rem;
+          color: #333;
+        }
+        .profile {
+          margin-top: 1.5rem;
+          p {
+            font-size: 1.2rem;
+          }
+        }
+      }
+      .review {
+        padding: 1.5rem 2rem;
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: space-between;
+        p {
+          font-size: 1.4rem;
+          color: #333;
+        }
+        &.hr {
+          &::before {
+            content: "";
+            position: absolute;
+            width: calc(100% - 4rem);
+            height: 1px;
+            bottom: 0;
+            left: 2rem;
+            background: #eaeaea;
+          }
+        }
+        .icon {
+          @include flex;
+          font-size: 2.2rem;
+          font-weight: bold;
+          img {
+            margin-right: 1rem;
+          }
+          .icon-star {
+            font-size: 1.2rem;
+            margin: 0 0.2rem;
+            &.grey {
+              &:before {
+                color: #ddd;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

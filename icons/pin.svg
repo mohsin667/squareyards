@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24.922" height="33.847" viewBox="0 0 24.922 33.847">
+  <g id="Group_3908" data-name="Group 3908" transform="translate(-759.643 -506)">
+    <g id="Group_3907" data-name="Group 3907" transform="translate(-0.224 -0.251)">
+      <g id="placeholder-filled-point_1_" data-name="placeholder-filled-point (1)" transform="translate(759.867 506.251)">
+        <path id="Path_3839" data-name="Path 3839" d="M25.344,0A12.475,12.475,0,0,0,12.883,12.461a12.155,12.155,0,0,0,1.09,5.087c3.116,6.817,9.089,14.015,10.846,16.059a.694.694,0,0,0,1.051,0c1.756-2.043,7.73-9.241,10.846-16.059a12.15,12.15,0,0,0,1.09-5.087A12.477,12.477,0,0,0,25.344,0Zm0,18.934a6.473,6.473,0,1,1,6.473-6.473A6.48,6.48,0,0,1,25.344,18.934Z" transform="translate(-12.883)"/>
+      </g>
+      <circle id="Ellipse_196" data-name="Ellipse 196" cx="7.102" cy="7.102" r="7.102" transform="translate(765.075 512.084)"/>
+    </g>
+    <path id="internet_1_" data-name="internet (1)" d="M11.868,5.45,6.291.1a.377.377,0,0,0-.522,0L.186,5.456A.637.637,0,0,0,0,5.9a.629.629,0,0,0,.628.628h.879v4.522a1,1,0,0,0,1.005,1H9.547a1,1,0,0,0,1.005-1V6.531h.879A.629.629,0,0,0,12.06,5.9.642.642,0,0,0,11.868,5.45Zm0,0" transform="translate(765.976 511.977)" fill="#fff"/>
+  </g>
+</svg>

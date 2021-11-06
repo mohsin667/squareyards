@@ -1,0 +1,57 @@
+// UPES theme color
+$primary-color: #f58020;
+$base-font-color: #707070;
+$heading-font-color: #808181;
+$bar-color: #dddddd;
+$pointer: #2c69b3;
+$purple: #f7cbff;
+$cyan: #e0f7f8;
+$green: #58bf93;
+$pink: #ffcbe9;
+
+// Media Query Screen Size's
+$tab: 768px;
+$medium: 992px;
+$default: 1024px;
+$large: 1200px;
+$xlarge: 1400px;
+$xxlarge: 1600px;
+
+//Fonts
+$regular: "Source Sans Pro", sans-serif;
+
+// mixins
+@mixin trans {
+  transition: all 0.3s;
+}
+@mixin shadow {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+@mixin border {
+  border: 1px solid #eaeaea;
+}
+@mixin radius {
+  border-radius: 0.8rem;
+}
+@mixin flex {
+  display: flex;
+  align-items: center;
+}
+@mixin margin {
+  margin-bottom: 6rem;
+  @media screen and (min-width: 992px) {
+    margin-bottom: 10rem;
+  }
+}
+.purple {
+  background-color: $purple;
+}
+.pink {
+  background-color: $pink;
+}
+.cyan {
+  background-color: $cyan;
+}
+.green {
+  background-color: #cbffdd;
+}

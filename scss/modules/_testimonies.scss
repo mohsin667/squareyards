@@ -1,0 +1,119 @@
+.testimonies {
+  margin-bottom: 6rem;
+  @include media($medium) {
+    margin-bottom: 10rem;
+  }
+  .tab {
+    padding-left: 0;
+  }
+  .section-row {
+    margin-bottom: 4rem;
+    .graphic-row {
+      display: flex;
+      justify-content: center;
+      font-size: 2.8rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      padding: 1rem 1rem 0.5rem;
+      border-radius: 0.8rem;
+      span.icon-like {
+        margin-right: 1rem;
+      }
+    }
+    .text-row {
+      display: flex;
+      align-items: flex-start;
+      span {
+        margin-right: 1rem;
+        &:before {
+          color: #666;
+        }
+      }
+    }
+  }
+}
+
+.section-row {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+  .card {
+    border: 1px solid #eaeaea;
+    margin-bottom: 0.75rem;
+    border-radius: 0.8rem;
+    width: calc(100% / 2 - 0.75rem);
+    @include media($tab) {
+      width: calc(100% / 3 - 0.75rem);
+    }
+    @include media($medium) {
+      width: calc(100% / 4 - 0.75rem);
+    }
+    @include media($large) {
+      width: calc(100% / 6 - 0.75rem);
+    }
+  }
+}
+
+.testimony-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+  margin-top: 2rem;
+  .card-content {
+    border-radius: 0.8rem;
+    padding: 3rem 2rem;
+    width: calc(100% / 2 - 0.75rem);
+    margin-bottom: calc(0.75rem * 2);
+    @include media($tab) {
+      width: calc(100% / 4 - 1.5rem);
+    }
+    p {
+      color: #5f449b;
+      font-weight: 600;
+      font-style: italic;
+    }
+  }
+}
+
+.sf-section {
+  margin-bottom: 6rem;
+  @include media($medium) {
+    margin-bottom: 10rem;
+  }
+  img {
+    max-height: 37.8rem;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+  .user {
+    width: 3.9rem;
+    height: 3.9rem;
+    border-radius: 100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  span {
+    margin-right: 1rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  p {
+    strong {
+      display: block;
+    }
+    font-style: normal;
+    color: #000;
+    font-weight: normal;
+    font-size: 1.2rem;
+  }
+}

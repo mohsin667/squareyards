@@ -1,0 +1,100 @@
+.explore-area {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6rem;
+  border-radius: 0.3rem;
+  flex-flow: wrap;
+  align-items: flex-start;
+  .explore-image {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    margin-bottom: 3rem;
+    @include media($medium) {
+      margin-bottom: 0;
+      position: absolute;
+    }
+  }
+  @include media($medium) {
+    border-radius: 0.8rem;
+    margin-bottom: 10rem;
+  }
+
+  .hotelList {
+    background: #fff;
+    padding: 2rem 2rem 2rem 0rem;
+    position: relative;
+    z-index: 9;
+    width: 100%;
+    @include media($medium) {
+      max-width: 31.5rem;
+      width: auto;
+      padding: 2rem 2rem 2rem 2rem;
+      @include shadow;
+      border-radius: 0 0.8rem 0.8rem 0;
+    }
+
+    li {
+      display: flex;
+      padding-bottom: 1.3rem;
+      border-bottom: 1px solid #e0e0e0;
+      margin-bottom: 1.3rem;
+      &:last-child {
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+      p {
+        font-size: 1.4rem;
+        color: #666666;
+      }
+      strong {
+        font-size: 1.6rem;
+        display: block;
+        font-weight: 600;
+        color: #000;
+        margin-bottom: 0.5rem;
+      }
+      img {
+        max-width: 7.2rem;
+        margin-right: 1.3rem;
+      }
+    }
+    .view-more {
+      width: 100%;
+      text-align: center;
+      padding: 0.5rem;
+      background: #e5f8f9;
+      font-size: 1.4rem;
+      border-radius: 0.3rem;
+      span {
+        font-size: 0.7rem;
+      }
+    }
+  }
+}
+
+.tab {
+  position: relative;
+  z-index: 9;
+  padding: 1.5rem 0;
+  display: flex;
+  max-width: 100%;
+  overflow: auto;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  @include media($medium) {
+    margin-bottom: 0;
+    padding: 1.5rem;
+    max-width: calc(100% - 315px);
+    padding: 1.5rem;
+  }
+  .sq-btn {
+    @include shadow;
+    margin-right: 0.8rem;
+    white-space: nowrap;
+  }
+}

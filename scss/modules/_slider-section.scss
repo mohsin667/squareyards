@@ -1,0 +1,130 @@
+.slider-section {
+  @include margin;
+  .tab {
+    padding-left: 0;
+  }
+  .scroller {
+    position: relative;
+    .slide-arrow {
+      width: 4rem;
+      height: 4rem;
+      border: none;
+      background-color: #fff;
+      outline: none;
+      @include flex;
+      justify-content: center;
+      @include shadow;
+      border-radius: 100%;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      z-index: 99;
+      &.prev-arrow {
+        left: 1.5rem;
+        img {
+          transform: rotate(180deg);
+        }
+      }
+      &.next-arrow {
+        right: 1.5rem;
+      }
+      img {
+        transform-origin: center;
+        width: 8px;
+      }
+    }
+
+    .item {
+      @include border;
+      @include shadow;
+      margin-left: calc(0.75rem / 2);
+      margin-right: calc(0.75rem / 2);
+      margin-bottom: 1rem;
+      border-radius: 0.8rem;
+      overflow: hidden;
+      position: relative;
+    }
+    .inner-item {
+      position: relative;
+      .slide-arrow {
+        width: auto;
+        height: auto;
+        background-color: transparent;
+      }
+      .slick-dots {
+        @include flex;
+        position: absolute;
+        justify-content: center;
+        bottom: 1rem;
+        width: 100%;
+        button {
+          background: rgba(255, 255, 255, 0.5);
+          width: 0.9rem;
+          height: 0.9rem;
+          border: none;
+          outline: none;
+          margin: 0 0.3rem;
+          border-radius: 100%;
+          font-size: 0;
+          color: transparent;
+          padding: 0;
+        }
+        .slick-active {
+          button {
+            background: rgba(255, 255, 255, 1);
+          }
+        }
+      }
+      img {
+        pointer-events: none;
+      }
+    }
+    .slider-content {
+      padding: 1rem 2rem;
+      h4 {
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+      h5 {
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+      p {
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+      }
+      .am {
+        display: flex;
+        .am-item {
+          white-space: nowrap;
+          display: inline-flex;
+          margin-right: 1.2rem;
+          font-size: 1.4rem;
+          img {
+            margin-right: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.slick-list,
+.slick-track {
+  position: static;
+}
+
+.badge-row {
+  z-index: 99;
+  top: 1rem;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+}
+.badge {
+  background-color: rgba(0, 0, 0, 0.6);
+}

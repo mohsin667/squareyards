@@ -1,0 +1,45 @@
+.ne-p {
+  @include margin;
+}
+.ne-row {
+  @include flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+  .ne-col {
+    width: calc(100% / 2 - 0.75rem);
+    height: 17.5rem;
+    overflow: hidden;
+    border-radius: 0.8rem;
+    position: relative;
+    margin-bottom: 1.5rem;
+    @include media($medium) {
+      width: calc(100% / 5 - 0.75rem);
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .thumb-title {
+      position: absolute;
+      bottom: 1rem;
+      width: 100%;
+      left: 1rem;
+      h2 {
+        color: #fff;
+        margin-bottom: 0.3rem;
+      }
+      a {
+        display: inline-flex;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 0.6rem;
+        font-size: 1.2rem;
+        border-radius: 0.3rem;
+        span {
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}
